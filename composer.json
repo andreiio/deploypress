@@ -1,0 +1,20 @@
+{
+    "name": "andreiio/wp-composer",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^4.8",
+        "wpackagist-plugin/qtranslate-x": "3.4.6.8"
+    },
+    "extra": {
+        "wordpress-install-dir": "public/wp",
+        "installer-paths": {
+            "public/content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}

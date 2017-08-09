@@ -1,0 +1,5 @@
+# Kill PHP Execution
+<Files *.php>
+	order deny,allow
+	deny from all
+</Files>
