@@ -31,7 +31,7 @@ set('bin/wp', function() {
 		}
 	}
 
-	return "{{bin/php}} $cmd --path={{current_path}}";
+	return "{{bin/php}} $cmd --path=\"{{current_path}}/public/wp\"";
 });
 
 ?>
