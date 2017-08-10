@@ -1,0 +1,10 @@
+staging:
+  hostname: example.com
+  deploy_path: ~/path/to/deploy
+  stage: staging
+  branch: develop
+production:
+  hostname: example.com
+  deploy_path: ~/path/to/deploy
+  stage: production
+  branch: master

@@ -11,7 +11,6 @@ define('DB_USER',              getenv('DB_USER'));
 define('DB_PASSWORD',          getenv('DB_PASSWORD'));
 define('DB_HOST',              getenv('DB_HOST'));
 
-
 // You almost certainly do not want to change these
 define('DB_CHARSET',           'utf8');
 define('DB_COLLATE',           '');
@@ -39,7 +38,6 @@ define('DISALLOW_FILE_EDIT',   true);
 
 define('APP_ENV',              getenv('APP_ENV'));
 define('APP_DEBUG',            getenv('APP_DEBUG'));
-
 
 if (APP_DEBUG) {
 	// Hide errors in prod
