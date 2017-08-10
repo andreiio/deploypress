@@ -11,6 +11,9 @@ define('DB_USER',              getenv('DB_USER'));
 define('DB_PASSWORD',          getenv('DB_PASSWORD'));
 define('DB_HOST',              getenv('DB_HOST'));
 
+// Database table prefix
+$table_prefix =                getenv('DB_PREFIX');
+
 // You almost certainly do not want to change these
 define('DB_CHARSET',           'utf8');
 define('DB_COLLATE',           '');
@@ -26,16 +29,16 @@ define('SECURE_AUTH_SALT',     getenv('SECURE_AUTH_SALT'));
 define('LOGGED_IN_SALT',       getenv('LOGGED_IN_SALT'));
 define('NONCE_SALT',           getenv('NONCE_SALT'));
 
-
+// Custom urls and content path
 define('WP_HOME',              rtrim(getenv('APP_URL'), '/'));
 define('WP_SITEURL',           WP_HOME . '/wp');
-// Custom Content Directory
 define('WP_CONTENT_DIR',       __DIR__ . '/content');
 define('WP_CONTENT_URL',       WP_HOME . '/content');
 
 // Disable editing in dashboard
 define('DISALLOW_FILE_EDIT',   true);
 
+// Useful values for code logic
 define('APP_ENV',              getenv('APP_ENV'));
 define('APP_DEBUG',            getenv('APP_DEBUG'));
 

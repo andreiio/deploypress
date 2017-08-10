@@ -4,6 +4,8 @@ namespace Deployer;
 
 require 'recipe/common.php';
 
+require 'vendor/autoload.php';
+
 set('allow_anonymous_stats', false);
 
 define('BASEPATH', __DIR__);
