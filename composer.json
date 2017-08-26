@@ -1,5 +1,5 @@
 {
-    "name": "andreiio/wp-composer",
+	"name": "andreiio/deploypress",
     "type": "project",
     "repositories": [
         {
@@ -9,7 +9,6 @@
     ],
     "require": {
         "johnpbloch/wordpress": "^4.8",
-        "wpackagist-plugin/qtranslate-x": "3.4.6.8",
         "vlucas/phpdotenv": "^2.4"
     },
     "extra": {

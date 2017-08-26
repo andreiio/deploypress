@@ -3,7 +3,7 @@
 namespace Deployer;
 
 // Get repository remote origin url from local git config
-set('repository', 'git@github.com:andreiio/wp-composer.git');
+set('repository', getenv('APP_REPO'));
 
 // Use date format for release name
 set('release_name', function() {
