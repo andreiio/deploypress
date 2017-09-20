@@ -1,0 +1,10 @@
+._*
+*.DS_Store
+node_modules/
+.sass-cache/
+/public/wp
+/public/content/upgrade
+/public/content/uploads
+/shared
+/vendor
+.env
