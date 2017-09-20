@@ -1,6 +1,6 @@
 {
 	"name": "andreiio/deploypress",
-    "type": "project",
+	"description": "Automated WordPress atomic deployment with composer, deployer and wp-cli",
     "repositories": [
         {
             "type": "composer",

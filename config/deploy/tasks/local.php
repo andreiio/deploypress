@@ -3,7 +3,7 @@
 namespace Deployer;
 
 desc('Create local shared directory structure');
-task('local:shared', function() {
+task('local:init', function() {
 	$shared = BASEPATH . '/shared';
 
 	foreach (get('shared_dirs') as $dir) {

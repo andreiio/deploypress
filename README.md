@@ -13,7 +13,7 @@ $ composer install
 
 If you plan to develop on a local environment, you should also run the following command, to create the required shared folders and symlinks.
 ```
-$ dep local:shared
+$ dep local:init
 ```
 
 To view all the existing deployment commands and their descriptions, use:
