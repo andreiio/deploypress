@@ -43,19 +43,19 @@ define('APP_ENV',              getenv('APP_ENV'));
 define('APP_DEBUG',            getenv('APP_DEBUG'));
 
 if (APP_DEBUG) {
-	// Hide errors in prod
-	ini_set('display_errors',  0);
-	define('WP_DEBUG',         false);
-	define('WP_DEBUG_LOG',     false);
-	define('WP_DEBUG_DISPLAY', false);
-	define('SAVEQUERIES',      false);
-} else {
 	// Always show errors in non-prod environment
 	ini_set('display_errors',  1);
 	define('WP_DEBUG',         true);
 	define('WP_DEBUG_LOG',     true);
 	define('WP_DEBUG_DISPLAY', true);
 	define('SAVEQUERIES',      true);
+} else {
+	// Hide errors in prod
+	ini_set('display_errors',  0);
+	define('WP_DEBUG',         false);
+	define('WP_DEBUG_LOG',     false);
+	define('WP_DEBUG_DISPLAY', false);
+	define('SAVEQUERIES',      false);
 }
 
 // Bootstrap WordPress
