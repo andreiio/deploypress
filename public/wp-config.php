@@ -6,13 +6,13 @@ $dotenv = new Dotenv\Dotenv(dirname(__DIR__));
 $dotenv->load();
 
 // Load database info and local development parameters
-define('DB_NAME',              getenv('DB_NAME'));
-define('DB_USER',              getenv('DB_USER'));
-define('DB_PASSWORD',          getenv('DB_PASSWORD'));
-define('DB_HOST',              getenv('DB_HOST'));
+define('DB_NAME',              getenv('DATABASE_NAME'));
+define('DB_USER',              getenv('DATABASE_USER'));
+define('DB_PASSWORD',          getenv('DATABASE_PASSWORD'));
+define('DB_HOST',              getenv('DATABASE_HOST'));
 
 // Database table prefix
-$table_prefix =                getenv('DB_PREFIX');
+$table_prefix =                getenv('DATABASE_PREFIX');
 
 // You almost certainly do not want to change these
 define('DB_CHARSET',           'utf8');
@@ -43,19 +43,19 @@ define('APP_ENV',              getenv('APP_ENV'));
 define('APP_DEBUG',            getenv('APP_DEBUG'));
 
 if (APP_DEBUG) {
-	// Hide errors in prod
-	ini_set('display_errors',  0);
-	define('WP_DEBUG',         false);
-	define('WP_DEBUG_LOG',     false);
-	define('WP_DEBUG_DISPLAY', false);
-	define('SAVEQUERIES',      false);
-} else {
 	// Always show errors in non-prod environment
 	ini_set('display_errors',  1);
 	define('WP_DEBUG',         true);
 	define('WP_DEBUG_LOG',     true);
 	define('WP_DEBUG_DISPLAY', true);
 	define('SAVEQUERIES',      true);
+} else {
+	// Hide errors in prod
+	ini_set('display_errors',  0);
+	define('WP_DEBUG',         false);
+	define('WP_DEBUG_LOG',     false);
+	define('WP_DEBUG_DISPLAY', false);
+	define('SAVEQUERIES',      false);
 }
 
 // Bootstrap WordPress

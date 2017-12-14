@@ -1,21 +1,21 @@
 {
 	"name": "andreiio/deploypress",
 	"description": "Automated WordPress atomic deployment with composer, deployer and wp-cli",
-	"version": "0.1.0",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org"
-        }
-    ],
-    "require": {
-        "johnpbloch/wordpress": "^4.8",
-        "vlucas/phpdotenv": "^2.4"
-    },
-    "extra": {
-        "wordpress-install-dir": "public/wp",
-        "installer-paths": {
-            "public/content/plugins/{$name}/": ["type:wordpress-plugin"]
-        }
-    }
+	"version": "0.1.1",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+	"require": {
+		"johnpbloch/wordpress": "^4.9",
+		"vlucas/phpdotenv": "^2.4"
+	},
+	"extra": {
+		"wordpress-install-dir": "public/wp",
+		"installer-paths": {
+			"public/content/plugins/{$name}/": ["type:wordpress-plugin"]
+		}
+	}
 }
