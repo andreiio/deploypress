@@ -1,7 +1,7 @@
 {
 	"name": "andreiio/deploypress",
 	"description": "Automated WordPress atomic deployment with composer, deployer and wp-cli",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"repositories": [
 		{
 			"type": "composer",
@@ -9,7 +9,7 @@
 		}
 	],
 	"require": {
-		"johnpbloch/wordpress": "^4.8",
+		"johnpbloch/wordpress": "^4.9",
 		"vlucas/phpdotenv": "^2.4"
 	},
 	"extra": {
